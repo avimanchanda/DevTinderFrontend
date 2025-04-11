@@ -11,7 +11,7 @@ const Connections = () => {
   const fetchConnections = async () => {
     try {
       const result = await axios.get(
-        'http://localhost:3000/user/requests/connections',
+        '/api/user/requests/connections',
         {
           withCredentials: true,
         }

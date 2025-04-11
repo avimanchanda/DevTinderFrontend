@@ -11,7 +11,7 @@ const Body = () => {
 
   const checkinguserdetails=async ()=>{
     try{
-      const res=await axios.get('http://localhost:3000/profile',{
+      const res=await axios.get('/api/profile',{
         withCredentials:true
       })
       console.log(res.data)

@@ -12,7 +12,7 @@ const Header = () => {
 
   const logoutHandler = async () => {
     try {
-      await axios.post('http://localhost:3000/logout', {}, { withCredentials: true });
+      await axios.post('/api/logout', {}, { withCredentials: true });
       dispatch(removeUser());
       navigate('/login');
     } catch (err) {

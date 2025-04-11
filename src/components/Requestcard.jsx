@@ -10,7 +10,7 @@ const Requestcard = ({ data }) => {
   const reviewconnectionrequest = async (status, id) => {
     try {
       await axios.post(
-        `http://localhost:3000/request/review/${status}/${id}`,
+        `/api/request/review/${status}/${id}`,
         {},
         { withCredentials: true }
       );

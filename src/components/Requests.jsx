@@ -11,7 +11,7 @@ const Requests = () => {
 
   const requestreceived = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/user/requests/received", {
+      const res = await axios.get("/api/user/requests/received", {
         withCredentials: true,
       });
 

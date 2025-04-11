@@ -10,7 +10,7 @@ const Feedcard = ({ data }) => {
   const reviewconnectionrequest = async (status, id) => {
     try {
       const result = await axios.post(
-        `http://localhost:3000/request/send/${status}/${id}`,
+        `/api/request/send/${status}/${id}`,
         {},
         { withCredentials: true }
       );
